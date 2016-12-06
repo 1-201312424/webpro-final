@@ -1,12 +1,17 @@
 package egovframework.student.service;
 
 import java.util.List;
-import egovframework.student.StudentDefaultVO;
+
 import egovframework.student.StudentVO;
 
-public interface StudentService {
+ public interface StudentService {
 	
-    void insertStudent(StudentVO vo) throws Exception;
+
+   void insertStudent(StudentVO vo) throws Exception;
     
-    List<?> selectStudentList() throws Exception;
+    List selectStudentList() throws Exception;
+    
+ 
+ 
+    
 }

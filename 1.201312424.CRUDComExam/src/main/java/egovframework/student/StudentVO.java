@@ -1,9 +1,10 @@
 package egovframework.student;
 
 
-public class StudentVO {
-  private java.lang.String number;
-  private java.lang.String name;
+public class StudentVO{
+   
+    private java.lang.String number;
+    private java.lang.String name;
     
     public java.lang.String getNumber() {
         return this.number;

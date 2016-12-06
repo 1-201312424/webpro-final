@@ -6,28 +6,28 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
-import egovframework.rte.fdl.idgnr.EgovIdGnrService;
-import egovframework.student.service.StudentService;
-import egovframework.student.StudentDefaultVO;
 import egovframework.student.StudentVO;
 import egovframework.student.service.StudentDAO;
+import egovframework.student.service.StudentService;
+
 
 @Service("studentService")
-public class StudentServiceImpl extends EgovAbstractServiceImpl implements
-        StudentService {
-      
+public class StudentServiceImpl extends EgovAbstractServiceImpl implements StudentService {
+        
+  
     @Resource(name="studentDAO")
     private StudentDAO studentDAO;
     
+   
+
     public void insertStudent(StudentVO vo) throws Exception {
     	studentDAO.insertStudent(vo);
+   	 	  	
     }
 
-    public List<?> selectStudentList() throws Exception {
+      public List<?> selectStudentList() throws Exception {
         return studentDAO.selectStudentList();
     }
-}
+      
+ }

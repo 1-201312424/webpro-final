@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import egovframework.com.cmm.service.impl.EgovComAbstractDAO;
+import egovframework.rte.psl.dataaccess.EgovAbstractDAO;
 import egovframework.student.StudentVO;
 
 
